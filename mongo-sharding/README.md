@@ -1,6 +1,34 @@
 ![Схема шардирования](image.png)
 
-Для запуска проекта необходимо выполнить
+Для запуска локально
+
+Создать среду исполнения
+```
+python -m venv venv
+```
+Активировать среду исполнения
+```
+source venv/bin/activate
+```
+Установить записимости
+```
+pip install -r requirements.txt
+```
+Проставить переменные окружения
+
+```
+export MONGODB_DATABASE_NAME="somedb"
+export MONGODB_URL="mongodb://localhost:27020"
+```
+
+Запустить приложение
+```
+uvicorn app:app --reload
+```
+Проверить, что открыавется страница по url http://127.0.0.1:8000 
+
+
+Для запуска проекта через docker-compose
 
 ```bash
 docker-compose up -d
@@ -24,6 +52,12 @@ rs.initiate(
   }
 );
 ```
+
+Отключиться от контейнера
+```
+exit();
+```
+
 
 2) Инициализировать шарды
 
