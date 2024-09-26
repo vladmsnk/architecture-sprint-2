@@ -1,3 +1,5 @@
+Схемы Drawio https://drive.google.com/file/d/1gvMG3WxE_KylKJkRqQ3kc0p_EcNBHMIX/view?usp=sharing
+
 ![Схема шардирования](image.png)
 
 Для запуска локально
