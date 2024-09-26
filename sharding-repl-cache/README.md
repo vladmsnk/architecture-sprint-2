@@ -121,3 +121,4 @@ docker exec -it redis_1 redis-cli --cluster create \
 docker exec -it redis_1  redis-cli cluster nodes
 ```
 
+На данном этапе у меня не получилось запустить app.py с кластером редиса, при запуске код зависает. После пары дней ресерча так и не понял в чем проблема, возможно проблема в самой библиотеке redis.cluster.
